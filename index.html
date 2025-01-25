@@ -3,18 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Squares and square roots of 1 to 100</title>
+    <title>Squares and square roots lister</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="s1">
-      <h1>Squares of 1 to 100</h1>
-      <div id="display"></div>
+      <h1>Squares</h1>
+      <h4>Starting point:</h4>
+      <input type="number" id="sp1" value="1" required /><br />
+      <h4>Ending point:</h4>
+      <input type="number" id="ep1" value="100" required />
+      <button onclick="d1()">Summit</button>
+      <div id="display">
+        Please enter integers and make sure starting point is less than or equal
+        to the ending point.
+      </div>
     </div>
     <div class="s2">
-      <h1>Square roots of 1 to 100</h1>
-      <div id="display2"></div>
+      <h1>Square roots</h1>
+      <h4>Starting point:</h4>
+      <input type="number" id="sp2" value="1" required /><br />
+      <h4>Ending point:</h4>
+      <input type="number" id="ep2" value="100" required /><br />
+      <h4>Result up to how many decimal places?:</h4>
+      <input type="number" id="k" value="2" required /><br />
+      <button onclick="d2()">Summit</button>
+      <div id="display2">
+        Please enter whole numbers and make sure the starting point is less than
+        or equal to the ending point, and the decimal places is an integer
+        greater than or equal to 2 but less than or equal to 16.
+      </div>
     </div>
   </body>
 </html>
