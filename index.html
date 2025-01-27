@@ -10,11 +10,21 @@
   <body>
     <div class="s1">
       <h1>Squares</h1>
-      <h4>Starting point:</h4>
-      <input type="number" id="sp1" value="1" required /><br />
-      <h4>Ending point:</h4>
-      <input type="number" id="ep1" value="100" required />
-      <button onclick="d1()">Summit</button>
+      <div class="container">
+        <h4>Starting point:</h4>
+        <input type="number" id="sp1" value="1" required />
+      </div>
+      <div class="container">
+        <h4>Ending point:</h4>
+        <input type="number" id="ep1" value="100" required />
+      </div>
+      <div class="container">
+        <input type="checkbox" id="r1" />
+        <h4>Reverse</h4>
+      </div>
+      <div class="container">
+        <button onclick="d1()">Summit</button>
+      </div>
       <div id="display">
         Please enter integers and make sure starting point is less than or equal
         to the ending point.
@@ -22,13 +32,25 @@
     </div>
     <div class="s2">
       <h1>Square roots</h1>
-      <h4>Starting point:</h4>
-      <input type="number" id="sp2" value="1" required /><br />
-      <h4>Ending point:</h4>
-      <input type="number" id="ep2" value="100" required /><br />
-      <h4>Result up to how many decimal places?:</h4>
-      <input type="number" id="k" value="2" required /><br />
-      <button onclick="d2()">Summit</button>
+      <div class="container">
+        <h4>Starting point:</h4>
+        <input type="number" id="sp2" value="1" required />
+      </div>
+      <div class="container">
+        <h4>Ending point:</h4>
+        <input type="number" id="ep2" value="100" required />
+      </div>
+      <div class="container">
+        <h4>Result up to<br />how many<br />decimal places?:</h4>
+        <input type="number" id="k" value="2" required />
+      </div>
+      <div class="container">
+        <input type="checkbox" id="r2" />
+        <h4>Reverse</h4>
+      </div>
+      <div class="container">
+        <button onclick="d2()">Summit</button>
+      </div>
       <div id="display2">
         Please enter whole numbers and make sure the starting point is less than
         or equal to the ending point, and the decimal places is an integer
